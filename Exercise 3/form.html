@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<script>
+function validateForm() {
+  let a = document.forms["myForm"]["fname"].value;
+  if(a=="") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function verify() {
+  let text;
+  if (confirm("Are you sure you want to submit the form?") == true) {
+    text = "Form submitted!";
+  } 
+  else {
+    text = "You cancelled!";
+  }
+  document.getElementById("confirmation").innerHTML = text;
+  text;
+}
+</script>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+<body>
+<h2>My Details</h2>
+<div>
+  <form name="myForm" onsubmit="return validateForm()" method="post">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Your name..">
+    <br><br>
+    
+    <label for="gender">Gender: </label>
+    <br>
+    <input type="radio" id="Male" name="gender" value="M">
+    <label for="1">Male</label><br>
+    <input type="radio" id="Female" name="gender" value="F">
+    <label for="2">Female</label><br>
+    <input type="radio" id="Other" name="gender" value="O">
+    <label for="3">Other</label>
+    <br><br>
+    
+    <label for="qual">Qualification:</label>
+    <br>
+    <input type="checkbox" id="1" name="1" value="1">
+    <label for="1">10th</label><br>
+    <input type="checkbox" id="2" name="2" value="2">
+    <label for="2">12th</label><br>
+    <input type="checkbox" id="3" name="3" value="3">
+    <label for="3">Diploma</label><br>
+    <input type="checkbox" id="4" name="4" value="4">
+    <label for="4">Degree</label><br><br>
+    </select>
+  
+    <input type="submit" value="Submit" onclick="verify()">
+    <p id="confirmation"></p>
+  </form>
+</div>
+
+</body>
+</html>
