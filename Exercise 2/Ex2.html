@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<style>
+.column {
+  float: left;
+  width: 25%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1 {
+font-size: 48px;
+font-family: "Times New Roman", serif;
+color: forestgreen;
+}
+h3 {
+font-family: "Gill Sans Extrabold", sans-serif;
+color: darkgreen;
+}
+h4 {
+font-family: Georgia, serif;
+color: purple;
+}
+p {
+font-family: Garamond, serif;
+color: deeppink;
+}
+li {
+font-family: Garamond, serif;
+color: deeppink;
+}
+body
+{
+background-color: skyblue;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: teal; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+</style>
+<h1>Trisha Balakrishnan</h1>
+<img src="/home/trisha/Documents/Sem 5/Web Technologies/Exercise 1/elephant.jpg" alt="Elephant" 
+width="120" height="80"
+style="vertical-align:top">
+<h4>trisha21110100@snuchennai.edu.in</h4>
+<h4>Shiv Nadar University Chennai</h4>
+<h3>Scholastic and Other Relevant Achievements</h3>
+<body>
+<p>
+<ul>
+<li>Placed 10th overall in the 2023 Red Hat Aptitude Test India.</li>
+<li>Part of an FTC Team that won the Rockwell Collins Innovate Award and was a finalist
+for the Motivate Award in 2016.</li>
+</ul>
+</p>
+</body>
+<h3>Relevant Coursework</h3>
+<body>
+<div class="row">
+<div class="column">
+<p class = "p">
+<ul>
+<li>DAA</li>
+<li>IST</li>
+<li>FDS</li>
+<li>CN+Lab</li>
+<li>OS+Lab</li>
+</ul>
+</p>
+</div>
+<div class="column">
+<p class = "p" >
+<ul>
+<li>DS+Lab</li>
+<li>DBMS+Lab</li>
+<li>COA</li>
+<li>DDM</li>
+</ul>
+</p>
+</div>
+<div class="column">
+<p class = "p" >
+<ul>
+<li>Intro to IoT+Lab</li>
+<li>C and Python</li>
+<li>OOP</li>
+<li>Engineering Physics</li>
+<li>SE</li>
+</ul>
+</p>
+</div>
+<div class="column">
+<p class = "p">
+<ul>
+<li>BEEE</li>
+<li>Linear Algebra</li>
+<li>Probability and Statistics</li>
+<li>Discrete Maths and Graph Theory</li>
+</ul>
+</p>
+</div>
+</div>
+</body>
+<h3>Projects</h3>
+<h4>MedMan - Personalized Medical Management</h4>
+<p class = "p">Currently working on a project to test the viability of a generalized system to
+generate a guideline for medicine dosage based on patients' physical conditions.</p>
+<body></body>
+<h3>Positions of Responsibility</h3>
+<body>
+<ul>
+<li>Student Editor, SiNews Editorial Board</li>
+<li>Campaigns Volunteer, MAD</li>
+</ul>
+</body>
+</html>
